@@ -8,6 +8,8 @@
     <meta name="viewport"
         content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet"
         href="css/style.min.css">
     <!-- <link rel="shortcut icon" href="/img/" type="image/x-icon"> -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
@@ -20,13 +22,52 @@
 <body>
     <header class="header">
         <div class="container">
-            hello
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__list-item">
+                        <a href="#">Women</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="#">Men</a>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="#">Catalog</a>
+                    </li>
+                </ul>
+                <ul class="nav__right">
+                    <li class="nav__right-item">
+                        <a href="#">
+                            Cart
+                            <img src="img/icons/cart.svg"
+                                alt="cart">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
 
+    <main class="banner">
+        <div class="container">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">Banner pic 1</div>
+                    <div class="swiper-slide">Banner pic 2</div>
+                    <div class="swiper-slide">Banner pic 3</div>
+                </div>
+
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div>
+    </main>
 
 
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="js/app.min.js"></script>
 </body>
 
