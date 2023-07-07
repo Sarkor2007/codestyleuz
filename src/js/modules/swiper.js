@@ -7,5 +7,7 @@ export function swiper() {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         },
+        spaceBetween: 6,
+        centeredSlides: true,
     });
 }

@@ -47,5 +47,29 @@ export function main() {
             swiper[i].classList.add('active')
         })
     }
+
+
+    const topBtn = document.querySelector(".toTopBtn")
+
+    window.addEventListener("scroll", () => {
+        if (document.documentElement.scrollTop > 20) {
+            topBtn.style.bottom = "20px";
+        } else {
+            topBtn.style.bottom = "-100%";
+            topBtn.style.transition = ".7s";
+        }
+    });
+
+
+
+    topBtn.addEventListener("click", function () {
+        topFunction();
+    });
+
+    function topFunction() {
+        document.documentElement.scrollTop = 0;
+    }
+
+
 }
 
